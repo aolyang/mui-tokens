@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        // Type
+        "strict": true,
+        "exactOptionalPropertyTypes": false,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noPropertyAccessFromIndexSignature": false,
+        "noUncheckedIndexedAccess": false,
+        "useUnknownInCatchVariables": true,
+        // Modules & Languages
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "target": "ES2022",
+        "lib": ["ESNext", "DOM", "DOM.Iterable"],
+        "jsx": "preserve",
+        "useDefineForClassFields": false,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": false,
+        "skipLibCheck": true,
+        "noEmit": true,
+        // JS
+        "allowJs": false,
+        "checkJs": false,
+        // Interop Constraints
+        "forceConsistentCasingInFileNames": true,
+        "allowSyntheticDefaultImports": true,
+        "isolatedModules": true,
+        "composite": true,
+        "tsBuildInfoFile": "./node_modules/.cache/tsconfig.tsbuildinfo"
+    }
+}
