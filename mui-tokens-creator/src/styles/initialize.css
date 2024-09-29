@@ -1,0 +1,19 @@
+/*
+because corePlugin preflight is disabled
+https://v1.tailwindcss.com/docs/adding-base-styles
+https://v5.mui.com/material-ui/integrations/interoperability/#tailwind-css
+*/
+/*@tailwind base;*/
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, #root {
+    width: 100%;
+    height: 100%;
+}

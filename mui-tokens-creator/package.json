@@ -1,16 +1,22 @@
 {
-    "name": "mui-tokens-preview",
+    "name": "mui-tokens-creator",
     "version": "0.0.0",
     "license": "MIT",
     "author": "aolyang <aolyang@foxmail.com>",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
     "dependencies": {
-        "mui-tokens": "workspace:^*",
         "@emotion/react": "^11.13.3",
         "@emotion/styled": "^11.13.0",
         "@mui/icons-material": "^6.1.0",
         "@mui/material": "^6.1.0",
+        "@vanilla-extract/css": "^1.15.5",
+        "@vanilla-extract/recipes": "^0.5.5",
         "allotment": "^1.20.2",
         "clsx": "^2.1.1",
+        "mui-tokens": "workspace:^*",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
         "react-router-dom": "^6.26.1"

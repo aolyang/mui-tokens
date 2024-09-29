@@ -54,3 +54,9 @@ export const cardClasses = style([
    }
 ])
 ```
+
+## Mui & Tailwind Table
+
+| tokens  | Mui   | Tailwind | Supported? |
+|---------|-------|----------|------------|
+| palette | color | colors   |            |

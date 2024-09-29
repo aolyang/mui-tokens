@@ -2,8 +2,12 @@
     "name": "workspaces",
     "private": true,
     "type": "module",
-    "scripts": {},
+    "scripts": {
+        "dev": "pnpm --filter mui-tokens-creator dev",
+        "build": "pnpm --filter mui-tokens-creator build"
+    },
     "devDependencies": {
+        "autoprefixer": "^10.4.20",
         "eslint": "^9.9.0",
         "eslint-compat": "npm:@eslint/compat@^1.1.1",
         "eslint-plugin-javascript": "npm:@eslint/js@^9.5.0",
