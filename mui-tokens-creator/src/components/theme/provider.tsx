@@ -7,6 +7,7 @@ import { createTheme, CssBaseline, ThemeProvider, useMediaQuery } from "@mui/mat
 import useEventListener from "@/hooks/event-listener"
 
 import { ColorModeContext } from "./context"
+import { components } from "./default-components"
 
 const parsedAsCustomColorMode = (mode: string | null): CustomColorMode => {
     return (["light", "dark", "system"] as const).find(m => m === mode) || "system"
@@ -24,7 +25,8 @@ export default function GlobalThemeProvider({ children }: { children: ReactNode 
 
     const theme = useMemo(() => createTheme({
         cssVariables: true,
-        palette: { mode: paletteMode }
+        palette: { mode: paletteMode },
+        components
     }),
     [paletteMode])
 
@@ -39,11 +41,15 @@ export default function GlobalThemeProvider({ children }: { children: ReactNode 
         localStorage.setItem("user-prefer-mode", mode)
     }, [mode, paletteMode])
 
+    const toggleMode = (mode?: CustomColorMode) => {
+        togglePaletteMode(oldMode => mode || (oldMode === "dark" ? "light" : "dark"))
+    }
+
     return (
         <ColorModeContext.Provider
             value={{
                 mode: paletteMode,
-                togglePaletteMode
+                toggleMode
             }}
         >
             <ThemeProvider theme={theme}>
